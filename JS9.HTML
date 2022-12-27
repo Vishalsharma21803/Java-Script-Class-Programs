@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Extras</title>
+</head>
+<body>
+    <p id="test"></p>
+    <p id="text"></p>
+    <script type="text/javascript">
+        var a; <!--global variable ... accessible inside as well as outside of the function in the whole function-->
+        function dummy(a,b){
+            return a+b;
+        }
+        var student = {
+            name: "Vishal",
+            subject:"javascript",
+            contact:9982955373,
+
+        };
+        document.getElementById('text').innerHTML="my name is "+student.name+"<br>"+ " and my favourite subject is "+student.subject+"<br>"+" and you can contact me on "+student.contact;
+        // we can use html tags in html -- just put the html tag in the value in the inverted commas 
+        var x=dummy(1,2);
+        document.getElementById('test').innerHTML=x;
+    </script>
+ 
+    
+
+
+</body>
+</html>
